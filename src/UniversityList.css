@@ -1,0 +1,138 @@
+/* UniversityList.css */
+
+.main-container {
+  display: flex;
+  width: 100%;
+}
+
+.university-container {
+  width: 95%;
+  max-width: 100%;
+  max-height: 100vh;
+  overflow-y: scroll;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+}
+
+.university-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #000000;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 640px) {
+  .university-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.university-title {
+  color: #fff;
+}
+
+.university-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.no-university-item {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.university-item {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+.btn-group {
+  display: flex;
+}
+.button1 {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #056305;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  width: 98px;
+}
+.button2 {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 98px;
+}
+
+.university-item:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 4px 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #707fd4;
+}
+
+/* Sort Button */
+.sort-button {
+  padding: 4px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #056305;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+@media only screen and (max-width: 600px) {
+  .university-item {
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+  }
+  .button1 {
+    margin-left: 0px;
+  }
+}
